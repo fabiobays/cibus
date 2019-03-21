@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subway"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/subChicken"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <EditText
+        android:id="@+id/carvTurkey"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/roastBeef"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <EditText
+        android:id="@+id/subClub"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <EditText
+        android:id="@+id/roastChicken"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <EditText
+        android:id="@+id/turkBreast"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <EditText
+        android:id="@+id/forestHam"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="132dp"
+        tools:text="@string/subFood1" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="182dp"
+        tools:text="@string/subFood2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="238dp"
+        tools:text="@string/subFood3" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="289dp"
+        tools:text="@string/subFood4" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="341dp"
+        tools:text="@string/subFood5" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="393dp"
+        tools:text="@string/subFood6" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="447dp"
+        tools:text="@string/subFood7" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="166dp"
+        android:layout_height="68dp"
+        android:contentDescription="@string/imgdes"
+        app:srcCompat="@drawable/subway"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="40dp" />
+</android.support.constraint.ConstraintLayout>

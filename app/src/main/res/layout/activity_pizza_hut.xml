@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PizzaHut"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/cheese"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <EditText
+        android:id="@+id/supreme"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="182dp"
+        tools:text="@string/phFood2" />
+
+    <EditText
+        android:id="@+id/bbq"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <TextView
+        android:id="@+id/textview40"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="447dp"
+        tools:text="@string/phFood7" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="258dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="238dp"
+        tools:text="@string/phFood3" />
+
+    <EditText
+        android:id="@+id/pepperoni"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <EditText
+        android:id="@+id/chicken"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="132dp"
+        tools:text="@string/phFood1" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="289dp"
+        tools:text="@string/phFood4" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="341dp"
+        tools:text="@string/phFood5" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="256dp"
+        android:layout_height="35dp"
+        android:text="@string/mdFood1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="393dp"
+        tools:text="@string/phFood6" />
+
+    <EditText
+        android:id="@+id/meat"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/veggie"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="@string/hint6"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imgdes"
+        app:srcCompat="@drawable/pizzahut"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="55dp" />
+</android.support.constraint.ConstraintLayout>

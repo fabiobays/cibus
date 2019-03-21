@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <EditText
+        android:id="@+id/RegUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint1"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/RegPass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/title2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/RegUser"
+        app:layout_constraintEnd_toEndOf="@+id/RegUser"
+        app:layout_constraintStart_toStartOf="@+id/RegUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/RegAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/Address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/RegZip"
+        app:layout_constraintStart_toStartOf="@+id/RegCell"
+        app:layout_constraintTop_toBottomOf="@+id/RegCell"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/RegPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint2"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/RegCell"
+        app:layout_constraintStart_toStartOf="@+id/RegUser"
+        app:layout_constraintTop_toBottomOf="@+id/RegUser"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/RegZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/zip"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/registerBtn"
+        app:layout_constraintStart_toStartOf="@+id/RegAddress"
+        app:layout_constraintTop_toBottomOf="@+id/RegAddress"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="206dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="46dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Registerbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/RegZip"
+        app:layout_constraintStart_toStartOf="@+id/RegZip"
+        app:layout_constraintTop_toBottomOf="@+id/RegZip" />
+
+    <EditText
+        android:id="@+id/RegCell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="@string/Phone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/RegAddress"
+        app:layout_constraintStart_toStartOf="@+id/RegPass"
+        app:layout_constraintTop_toBottomOf="@+id/RegPass"
+        tools:ignore="Autofill"
+        android:gravity="center_horizontal" />
+
+
+</android.support.constraint.ConstraintLayout>
