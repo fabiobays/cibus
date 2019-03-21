@@ -8,7 +8,10 @@
     <string name="register">Register Here</string>
     <string name="title2">Registration Form</string>
     <string name="Phone">Phone</string>
-    <string name="Address">Address</string>
+    <string name="Address">Street Name</string>
+    <string name="strNum">Street Number</string>
+    <string name="prov">Province</string>
+    <string name="city">City</string>
     <string name="zip">Zip code</string>
     <string name="Registerbtn">Register</string>
     <string name="title3">Reset Password</string>
@@ -44,6 +47,8 @@
     <string name ="menu2">Order History</string>
     <string name="menu3">Promotion</string>
     <string name="menu4">Logout</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
     <string name="mdFood1">Big Mac Meal ($8.89)</string>
     <string name="mdFood2">Mighty Angus Original Meal ($10.29)</string>
     <string name="mdFood3">Quarter Pounder with Cheese Meal ($8.89)</string>

@@ -21,21 +21,19 @@ public class Registration extends AppCompatActivity {
         final EditText username = findViewById(R.id.RegUser);
         final EditText password = findViewById(R.id.RegPass);
         final EditText phone = findViewById(R.id.RegCell);
-        final EditText address = findViewById(R.id.RegAddress);
-        final EditText postalCode = findViewById(R.id.RegZip);
+        final EditText fname = findViewById(R.id.RegFname);
+        final EditText lname  = findViewById(R.id.RegLname);
         final Button btRegister = findViewById(R.id.registerBtn);
 
         btRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-                    //TODO GET A NEW FIELD FOR USER EMAIL, FIRST NAME AND LASTNAME
-                    boolean registered = dbh.register("Fabio", "Bays", username.getText().toString(), phone.getText().toString(), 1, username.getText().toString(), password.getText().toString());
+                    boolean registered = dbh.register(fname.getText().toString(), lname.getText().toString(), username.getText().toString(), phone.getText().toString(), 0, username.getText().toString(), password.getText().toString());
                     if(!registered)
                         Toast.makeText(Registration.this, "Something went wrong, please check your info and try again!", Toast.LENGTH_LONG).show();
                     else
                     {
-
                         Intent i = new Intent(Registration.this,Login.class);
                         i.putExtra("registered",username.getText().toString());
                         startActivity(i);

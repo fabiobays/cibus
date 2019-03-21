@@ -1,6 +1,7 @@
 package com.example.leonardokafuri.cibus;
 
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,7 +14,7 @@ import android.widget.Spinner;
 public class WhiteSpot extends AppCompatActivity {
 
     String selection = "";
-    int db, hamburguer, pastas,steak;
+    int db, hamburguer, pastas,clubs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,10 @@ public class WhiteSpot extends AppCompatActivity {
         final EditText dbdb = findViewById(R.id.doubledouble);
         final EditText hbg = findViewById(R.id.chickenPasta);
         final EditText pasta = findViewById(R.id.legendBurger);
+        final EditText club = findViewById(R.id.wsClub);
+        final EditText shrimp = findViewById(R.id.shrimpSandwich);
+        final EditText natbeef = findViewById(R.id.natBeef);
+        final EditText dipping = findViewById(R.id.dippinCaesar);
 
         //calculate the prices on the checkboxes and add to a price pass the price to the next screen
 
@@ -31,20 +36,24 @@ public class WhiteSpot extends AppCompatActivity {
                 db=Integer.parseInt(dbdb.getText().toString());
                 pastas = Integer.parseInt(pasta.getText().toString());
                 hamburguer = Integer.parseInt(hbg.getText().toString());
+                clubs = Integer.parseInt(club.getText().toString());
 
                 try {
                     if (db > 0) {
                         selection = "Double double :" + db + "\n";
 
-                    } else if (pastas > 0) {
+                    }
+                    if(pastas > 0) {
                         selection = selection + "Pasta : " + pastas +"\n";
 
-                    } else if (hamburguer > 0) {
+                    }
+                    if (hamburguer > 0) {
                         selection = selection + "Hamburguers : " + hamburguer + "\n";
 
-                    } else {
-                        selection = "Error";
-
+                    }
+                    if(clubs>0)
+                    {
+                        selection = selection + "Clubhouse : " + clubs + "\n";
                     }
 
 
@@ -55,6 +64,7 @@ public class WhiteSpot extends AppCompatActivity {
                 }catch (Exception e)
                 {
                     e.printStackTrace();
+                    selection = "Error";
                 }
 
                 //startActivity(new Intent(WhiteSpot.this,OrderConfirmation.class));
