@@ -47,8 +47,10 @@
     <string name ="menu2">Order History</string>
     <string name="menu3">Promotion</string>
     <string name="menu4">Logout</string>
-    <string name="fname">First Name</string>
+   <string name="fname">First Name</string>
     <string name="lname">Last Name</string>
+    <string name="type">Card Type</string>
+    <string name="expr">Expire date</string>
     <string name="mdFood1">Big Mac Meal ($8.89)</string>
     <string name="mdFood2">Mighty Angus Original Meal ($10.29)</string>
     <string name="mdFood3">Quarter Pounder with Cheese Meal ($8.89)</string>
